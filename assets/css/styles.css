@@ -59,10 +59,6 @@ a:active {
   flex-direction: column;
 }
 
-.btn--scroll:hover,
-.btn--scroll:active {
-}
-
 /* HERO */
 
 .section-hero {
@@ -133,6 +129,12 @@ a:active {
 .social-links a:hover,
 .social-links a:active {
   margin-top: 1.8rem;
+}
+
+.resume-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .scroll-prompt {
