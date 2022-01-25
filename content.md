@@ -14,6 +14,7 @@ My Resume
 Twitter: https://twitter.com/itsOlinKirkland
 Instagram: https://www.instagram.com/olinkirkland/
 LinkedIn: https://www.linkedin.com/in/olin-kirkland-10483078/
+GitHub: https://github.com/olinkirkland
 Email: me@olinkirk.land
 
 ## About Me
