@@ -1,0 +1,29 @@
+/* rem and em do NOT depend on HTML font-size in media queries 
+instead, 1rem = 1em = 16px */
+
+/* rem has some bugs in some browsers when used in media
+ queries, so use em */
+
+/**************************************/
+/* L -- BELOW 1200 */
+/**************************************/
+
+/* 1200px / 16px = 75 */
+@media (max-width: 75em) {
+}
+
+/**************************************/
+/* M -- BELOW 992 */
+/**************************************/
+
+/* 992px / 16px = 62 */
+@media (max-width: 62em) {
+}
+
+/**************************************/
+/* S -- BELOW 768 */
+/**************************************/
+
+/* 768px / 16px = 48 */
+@media (max-width: 48em) {
+}

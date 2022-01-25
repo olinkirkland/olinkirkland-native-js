@@ -1,0 +1,59 @@
+/* GENERAL */
+
+html {
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  color: #f8f8f8;
+  background-color: #343a40;
+}
+
+.section-hero {
+  padding: 4rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(rgba(255, 63, 63, 0.3), rgba(84, 54, 255, 0.3)),
+    url(../img/splash.jpg);
+  background-position-y: bottom;
+  object-fit: cover;
+  background-size: cover;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 64rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 4rem 6rem;
+  border-radius: 10px;
+}
+
+.section-hero h1 {
+  font-size: 6.4rem;
+  margin-bottom: 2rem;
+  font-weight: bolder;
+}
+
+.section-hero h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.section-hero p {
+  font-size: 2rem;
+}

@@ -18,7 +18,7 @@ Email: me@olinkirk.land
 
 ## About Me
 
-My name is Olin. I'm a German-American software developer living and working in Cologne, Germany.
+Hi, I'm Olin. I'm a German-American software developer living and working in Cologne, Germany.
 
 My favorite projects involve developing user-friendly applications or games. My main experience is in front-end development and I also have a passion for design. Since creating modern applications usually involves a combination of development and design, I think having experience in both makes for a better end result and user experience.
 
