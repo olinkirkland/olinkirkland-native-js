@@ -340,11 +340,14 @@ a:active {
 .project-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: masonry;
+  grid-template-rows: 1fr;
   gap: 2rem;
 }
 
 .project-card {
+  display: flex;
+  flex-direction: column;
+
   border-radius: 10px;
   overflow: hidden;
   background-color: #f8f8f8;
@@ -356,9 +359,18 @@ a:active {
 
 .project-card img {
   width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  object-position: center;
 }
 
 .project-text {
+  display: flex;
+  flex-direction: column;
+
+  /* Grow to fill the parent */
+  flex: 1;
+
   padding: 2rem;
 }
 
@@ -367,6 +379,11 @@ a:active {
   font-weight: 500;
   line-height: 1.4;
   margin-bottom: 1.8rem;
+}
+
+.project-text a {
+  align-self: center;
+  margin-top: auto;
 }
 
 /* FOOTER */
