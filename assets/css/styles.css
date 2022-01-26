@@ -89,6 +89,21 @@ a:active {
   border: 1px solid rgba(248, 248, 248, 1);
 }
 
+.btn--read-more:link,
+.btn--read-more:visited {
+  justify-content: center;
+  background-color: rgb(52, 58, 64, 0.05);
+  border: none;
+  color: rgb(52, 58, 64, 0.8);
+}
+
+.btn--read-more:hover,
+.btn--read-more:active {
+  background-color: rgb(52, 58, 64, 0.1);
+  border: none;
+  color: rgb(52, 58, 64, 1);
+}
+
 .btn--scroll:link,
 .btn--scroll:visited {
   border: none;
@@ -321,6 +336,38 @@ a:active {
 }
 
 /* PORTFOLIO */
+
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: masonry;
+  gap: 2rem;
+}
+
+.project-card {
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #f8f8f8;
+
+  box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
+
+  transition: all 0.3s;
+}
+
+.project-card img {
+  width: 100%;
+}
+
+.project-text {
+  padding: 2rem;
+}
+
+.project-text h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 1.8rem;
+}
 
 /* FOOTER */
 
