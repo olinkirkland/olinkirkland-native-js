@@ -15,8 +15,19 @@ html {
 
 body {
   font-family: 'Outfit', sans-serif;
-  color: #f8f8f8;
-  background-color: #343a40;
+  background-color: #f8f8f8;
+  color: #343a40;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+.container {
+  padding: 3.2rem;
+  margin: 6.4rem auto;
+  max-width: 96rem;
 }
 
 /* LINKS & BUTTONS */
@@ -80,6 +91,7 @@ a:active {
   display: flex;
   flex-direction: column;
   max-width: 64rem;
+  color: #f8f8f8;
   background-color: rgba(0, 0, 0, 0.6);
   padding: 4rem 6rem;
   border-radius: 10px;
@@ -139,11 +151,24 @@ a:active {
 
 .resume-container i {
   font-size: 1.8rem;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .scroll-prompt {
   position: absolute;
   bottom: 4rem;
   margin: 0 auto;
+}
+
+/* ABOUT ME */
+
+.section-about-me {
+}
+
+.intro {
+  display: flex;
+}
+
+p {
+  margin-bottom: 2rem;
 }
