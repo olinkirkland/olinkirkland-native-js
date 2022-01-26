@@ -32,17 +32,28 @@ strong {
 h2 {
   font-size: 4rem;
   font-weight: 400;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 p {
   margin-bottom: 2rem;
 }
 
+hr {
+  max-width: 96rem;
+  margin: 0 auto;
+  padding: 0 4rem;
+  border: 1px dashed rgba(52, 58, 64, 0.2);
+}
+
 .container {
   padding: 3.2rem;
   margin: 6.4rem auto;
   max-width: 96rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 /* LINKS & BUTTONS */
@@ -201,4 +212,127 @@ a:active {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+}
+
+.intro-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 3rem;
+
+  border-radius: 10px;
+
+  transition: all 0.3s;
+  box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
+}
+
+.intro-card p {
+  margin-bottom: 0;
+}
+
+.intro-card i {
+  padding: 2rem;
+  font-size: 4rem;
+  color: #1864ab;
+}
+
+/* SKILLS */
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 1.8rem;
+  align-items: center;
+  background-color: rgb(24, 100, 171, 0.1);
+  padding: 0.8rem 1.6rem;
+  border-radius: 5px;
+}
+
+.skill-badge p {
+  margin-bottom: 0;
+}
+
+/* UDEMY CERTIFICATES */
+
+.udemy-certificates {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 2rem;
+}
+
+.udemy-certificate a:link,
+.udemy-certificate a:visited {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 2rem;
+  height: 100%;
+
+  box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
+
+  transition: all 0.3s;
+}
+
+.udemy-certificate a:hover,
+.udemy-certificate a:active {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.udemy-certificate p {
+  width: 100%;
+  margin: 0;
+}
+
+.cert-header {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1.2rem;
+  height: 6rem;
+}
+
+.cert-name {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #343a40;
+}
+
+.cert-date {
+  color: rgba(52, 58, 64, 0.6);
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.udemy-certificate img {
+  width: 3.2rem;
+  height: 3.2rem;
+  opacity: 0.4;
+}
+
+/* PORTFOLIO */
+
+/* FOOTER */
+
+footer {
+  background-color: #343a40;
+}
+
+.section-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgba(248, 248, 248, 0.6);
+  font-size: 1.6rem;
+  padding: 4rem;
 }
