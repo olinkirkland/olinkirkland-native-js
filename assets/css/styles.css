@@ -89,21 +89,6 @@ a:active {
   border: 1px solid rgba(248, 248, 248, 1);
 }
 
-.btn--read-more:link,
-.btn--read-more:visited {
-  justify-content: center;
-  background-color: rgb(52, 58, 64, 0.1);
-  border: none;
-  color: rgb(52, 58, 64, 0.8);
-}
-
-.btn--read-more:hover,
-.btn--read-more:active {
-  background-color: rgb(52, 58, 64, 0.2);
-  border: none;
-  color: rgb(52, 58, 64, 1);
-}
-
 .btn--scroll:link,
 .btn--scroll:visited {
   border: none;
@@ -385,11 +370,6 @@ a:active {
   font-weight: 500;
   line-height: 1.4;
   margin-bottom: 1.8rem;
-}
-
-.project-text a {
-  align-self: flex-start;
-  margin-top: auto;
 }
 
 /* FOOTER */
