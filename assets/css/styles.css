@@ -341,9 +341,6 @@ a:active {
   box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
 }
 
-.project-card--interactive {
-}
-
 .project-card img {
   height: 28rem;
   width: 32rem;
