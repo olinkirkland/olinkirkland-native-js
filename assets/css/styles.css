@@ -320,7 +320,7 @@ a:active {
   opacity: 0.4;
 }
 
-/* PORTFOLIO */
+/* PROJECTS */
 
 .project-cards {
   display: grid;
@@ -337,13 +337,15 @@ a:active {
   overflow: hidden;
   background-color: #f8f8f8;
 
-  box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
-
   transition: all 0.3s;
+  box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
+}
+
+.project-card--interactive {
 }
 
 .project-card img {
-  height: 24rem;
+  height: 28rem;
   width: 32rem;
   object-fit: cover;
   object-position: center;
@@ -356,13 +358,11 @@ a:active {
 .project-text {
   display: flex;
   flex-direction: column;
-
   grid-column: span 2;
+  padding: 2rem;
 
   /* Grow to fill the parent */
   flex: 1;
-
-  padding: 2rem;
 }
 
 .project-text h3 {
@@ -370,6 +370,38 @@ a:active {
   font-weight: 500;
   line-height: 1.4;
   margin-bottom: 1.8rem;
+}
+
+/* PROJECTS - TAGS */
+
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.tag-container a:link,
+.tag-container a:visited {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #f8f8f8;
+  background-color: rgba(24, 100, 171, 0.8);
+  padding: 0.8rem 1.6rem;
+  align-items: center;
+  border-radius: 100px;
+}
+
+.tag-container a:hover,
+.tag-container a:active {
+  background-color: rgba(24, 100, 171, 1);
+}
+
+.tag-container a::before {
+  content: url(../svg-icons/tag.svg);
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-right: 0.4rem;
 }
 
 /* FOOTER */
