@@ -375,6 +375,7 @@ a:active {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  display: none;
 }
 
 .tag-container a:link,
