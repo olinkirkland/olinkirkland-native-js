@@ -18,6 +18,17 @@ instead, 1rem = 1em = 16px */
 
 /* 992px / 16px = 62 */
 @media (max-width: 62em) {
+  h2 {
+    font-size: 3.2rem;
+  }
+
+  .intro-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card img {
+    height: 32rem;
+  }
 }
 
 /**************************************/
@@ -26,4 +37,59 @@ instead, 1rem = 1em = 16px */
 
 /* 768px / 16px = 48 */
 @media (max-width: 48em) {
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  .section-hero {
+    /* vh doesn't work well on iOS */
+    height: auto;
+    justify-content: flex-start;
+  }
+
+  .scroll-prompt {
+    display: none;
+  }
+
+  .header-content {
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .resume-download {
+    display: none;
+  }
+
+  .header-content h1 {
+    font-size: 3.2rem;
+  }
+
+  .header-content h2 {
+    font-size: 2rem;
+  }
+
+  .header-content p {
+    font-size: 1.6rem;
+    line-height: 1.2;
+  }
+
+  .header-links {
+    flex-direction: column;
+  }
+
+  .intro-image {
+    margin: 0 0 2rem 0;
+  }
+
+  .udemy-certificates {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    grid-template-columns: 1fr;
+  }
+
+  .project-cards .project-card:nth-child(odd) img {
+    order: 0;
+  }
 }
