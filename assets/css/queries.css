@@ -29,6 +29,20 @@ instead, 1rem = 1em = 16px */
   .project-card img {
     height: 32rem;
   }
+
+  .project-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project-card {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card img:nth-child(odd) {
+    order: 0;
+    width: 100%;
+    height: 12rem;
+  }
 }
 
 /**************************************/
@@ -85,11 +99,7 @@ instead, 1rem = 1em = 16px */
     grid-template-columns: 1fr;
   }
 
-  .project-card {
+  .project-cards {
     grid-template-columns: 1fr;
-  }
-
-  .project-cards .project-card:nth-child(odd) img {
-    order: 0;
   }
 }

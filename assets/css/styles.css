@@ -349,7 +349,7 @@ a:active {
   object-position: center;
 }
 
-.project-cards .project-card:nth-child(odd) img {
+.project-card:nth-child(odd) img {
   order: 2;
 }
 
