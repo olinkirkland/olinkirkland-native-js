@@ -102,4 +102,8 @@ instead, 1rem = 1em = 16px */
   .project-cards {
     grid-template-columns: 1fr;
   }
+
+  .tag-container {
+    justify-content: center;
+  }
 }
