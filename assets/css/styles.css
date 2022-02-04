@@ -235,7 +235,6 @@ a:active {
   padding: 4rem 3rem;
 
   border-radius: 10px;
-
   border: 1px solid #1864ab;
   box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
 }
@@ -338,26 +337,28 @@ a:active {
 
 .project-cards {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: 1fr;
   gap: 2rem;
 }
 
 .project-card {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-
   border-radius: 10px;
+  aspect-ratio: 1;
   overflow: hidden;
   background-color: #f8f8f8;
 
-  transition: all 0.3s;
   box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
 }
 
-.project-card img {
-  height: 28rem;
-  width: 32rem;
+.project-card--big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.project-card > img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
 }
