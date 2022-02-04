@@ -20,8 +20,9 @@ body {
 }
 
 p {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 1.8;
+  margin-bottom: 2rem;
 }
 
 strong {
@@ -33,10 +34,6 @@ h2 {
   font-size: 4rem;
   font-weight: 400;
   margin-bottom: 4rem;
-}
-
-p {
-  margin-bottom: 2rem;
 }
 
 hr {
@@ -67,6 +64,21 @@ a:hover,
 a:active {
   cursor: pointer;
   color: #f8f8f8;
+}
+
+.project-text a:link,
+.project-text a:visited {
+  color: currentColor;
+  border-bottom: 1px dashed;
+  transition: all 0.5s;
+}
+
+.project-text a:hover,
+.project-text a:active {
+  cursor: pointer;
+  color: currentColor;
+  border-bottom: 1px dashed transparent;
+  transition: all 0.5s;
 }
 
 .btn:link,
@@ -162,13 +174,14 @@ a:active {
 .social-links a:link,
 .social-links a:visited {
   display: inline-block;
-  margin: 2rem 0;
-  transition: margin 0.3s;
+  position: relative;
+  top: 0;
+  transition: all 0.3s;
 }
 
 .social-links a:hover,
 .social-links a:active {
-  margin-top: 1.8rem;
+  top: -0.4rem;
 }
 
 .resume-container {
@@ -223,7 +236,7 @@ a:active {
 
   border-radius: 10px;
 
-  transition: all 0.3s;
+  border: 1px solid #1864ab;
   box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
 }
 
@@ -232,9 +245,10 @@ a:active {
 }
 
 .intro-card i {
-  padding: 2rem;
+  position: relative;
   font-size: 4rem;
   color: #1864ab;
+  margin-bottom: 1.6rem;
 }
 
 /* SKILLS */
@@ -414,5 +428,13 @@ footer {
   align-items: center;
   color: rgba(248, 248, 248, 0.6);
   font-size: 1.6rem;
-  padding: 4rem;
+  padding: 6rem;
+}
+
+.section-footer .social-links {
+  margin-bottom: 0.8rem;
+}
+
+.section-footer p {
+  margin: 0;
 }
