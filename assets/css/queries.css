@@ -26,22 +26,18 @@ instead, 1rem = 1em = 16px */
     grid-template-columns: 1fr;
   }
 
-  .project-card img {
-    height: 32rem;
+  .project-cards {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
   }
 
-  .project-cards {
-    grid-template-columns: repeat(2, 1fr);
+  .project-card--big {
+    grid-column: span 1;
+    grid-row: span 1;
   }
 
   .project-card {
     grid-template-columns: 1fr;
-  }
-
-  .project-card img:nth-child(odd) {
-    order: 0;
-    width: 100%;
-    height: 12rem;
   }
 }
 
@@ -53,6 +49,10 @@ instead, 1rem = 1em = 16px */
 @media (max-width: 48em) {
   h2 {
     font-size: 2.4rem;
+  }
+
+  .hover-tile:hover {
+    top: 0;
   }
 
   .section-hero {
@@ -101,6 +101,10 @@ instead, 1rem = 1em = 16px */
 
   .project-cards {
     grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    aspect-ratio: 3;
   }
 
   .tag-container {
