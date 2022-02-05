@@ -53,6 +53,20 @@ hr {
   text-align: center;
 }
 
+/* LIGHTBOX */
+#lightbox {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  z-index: 99;
+}
+
+#lightbox:target {
+  display: fixed;
+}
+
 /* LINKS & BUTTONS */
 
 .hover-tile {
@@ -347,8 +361,9 @@ a:active {
 }
 
 .project-card {
-  border-radius: 7px;
+  /* border-radius: 7px; */
   aspect-ratio: 1;
+  border: 10px solid white;
   overflow: hidden;
   background-color: #f8f8f8;
 }
@@ -361,8 +376,17 @@ a:active {
 .project-card > img {
   width: 100%;
   height: 100%;
+  opacity: 0.95;
   object-fit: cover;
   object-position: center;
+
+  transition: all 0.3s;
+}
+
+.project-card:hover > img {
+  opacity: 1;
+
+  transition: all 0.3s;
 }
 
 .project-card:nth-child(odd) img {
