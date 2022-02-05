@@ -9,19 +9,19 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="assets/favicon/apple-touch-icon.jpg"
+      href="assets/favicon/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="assets/favicon/favicon-32x32.jpg"
+      href="assets/favicon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="assets/favicon/favicon-16x16.jpg"
+      href="assets/favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="assets/favicon/site.webmanifest" />
 
@@ -53,7 +53,9 @@
     <title>Olin Kirkland</title>
   </head>
   <body>
-    <div id="lightbox"></div>
+    <div id="lightbox">
+      <img id="lightbox-image" src="" alt="Lightbox image" />
+    </div>
 
     <main>
       <section class="section-hero">
@@ -279,168 +281,176 @@
       <section id="projects" class="section-projects">
         <div class="container">
           <h2 class="text-center">My <strong>Projects</strong></h2>
-          <div class="project-cards">
-            <div class="hover-tile project-card project-card--big">
-              <img src="assets\img\projects\Woodland Stories.jpg" alt="" />
+          <div class="project-cards" onclick="onClickProjectCard(event)">
+            <div
+              class="hover-tile project-card project-card--big lb-woodland-stories"
+            >
+              <img src="assets\img\projects\project-thumbnails\Woodland Stories.jpg" alt="" />
             </div>
-            <div class="hover-tile project-card">
-              <img src="assets\img\projects\Realms.jpg" alt="" />
+            <div class="hover-tile project-card lb-realms">
+              <img src="assets\img\projects\project-thumbnails\Realms.jpg" alt="" />
             </div>
-            <div class="hover-tile project-card project-card--big">
-              <img src="assets\img\projects\Worlds.jpg" alt="" />
+            <div class="hover-tile project-card project-card--big lb-worlds">
+              <img src="assets\img\projects\project-thumbnails\Worlds.jpg" alt="" />
             </div>
-            <div class="hover-tile project-card">
-              <img src="assets\img\projects\Castle Map Screenshot.jpg" alt="" />
+            <div class="hover-tile project-card lb-castle-map">
+              <img src="assets\img\projects\project-thumbnails\Castle Map Screenshot.jpg" alt="" />
             </div>
-            <div class="hover-tile project-card">
+            <div class="hover-tile project-card lb-crest">
               <img
-                src="assets\img\projects\Crest Creator Screenshot Red.jpg"
+                src="assets\img\projects\project-thumbnails\Crest Creator Screenshot Red.jpg"
                 alt=""
               />
             </div>
-            <div class="hover-tile project-card">
+            <div class="hover-tile project-card lb-death-calculator">
               <img
-                src="assets\img\projects\Death Calculator Home Screenshot.jpg"
+                src="assets\img\projects\project-thumbnails\Death Calculator Home Screenshot.jpg"
                 alt=""
               />
             </div>
-            <div class="hover-tile project-card">
+            <div class="hover-tile project-card lb-energy-career-quiz">
               <img
-                src="assets\img\projects\Energy Career Quiz Screenshot Title Screen.jpg"
+                src="assets\img\projects\project-thumbnails\Energy Career Quiz Screenshot Title Screen.jpg"
                 alt=""
               />
             </div>
-            <div class="hover-tile project-card">
+            <div class="hover-tile project-card lb-energy-map">
               <img
-                src="assets\img\projects\Energy Map Screenshot Substations.jpg"
+                src="assets\img\projects\project-thumbnails\Energy Map Screenshot Substations.jpg"
                 alt=""
               />
             </div>
-            <div class="hover-tile project-card">
+            <div class="hover-tile project-card lb-fracking-game">
               <img
-                src="assets\img\projects\Fracking Simulator Gameplay.jpg"
+                src="assets\img\projects\project-thumbnails\Fracking Simulator Gameplay.jpg"
                 alt=""
               />
             </div>
-            <div class="hover-tile project-card">
+            <div class="hover-tile project-card lb-geologic-timeline">
               <img
-                src="assets\img\projects\Geologic Timeline Screenshot Content Screen.jpg"
+                src="assets\img\projects\project-thumbnails\Geologic Timeline Screenshot Content Screen.jpg"
                 alt=""
               />
             </div>
-            <div class="hover-tile project-card">
+            <div class="hover-tile project-card lb-geosteering-game">
               <img
-                src="assets\img\projects\Geosteering Simulator Screenshot.jpg"
+                src="assets\img\projects\project-thumbnails\Geosteering Simulator Screenshot.jpg"
                 alt=""
               />
             </div>
-            <div class="hover-tile project-card">
+            <div class="hover-tile project-card lb-hydrocarbon-info-1">
               <img
-                src="assets\img\projects\Hydrocarbon Information Center Screenshot Canada.jpg"
+                src="assets\img\projects\project-thumbnails\Hydrocarbon Information Center Screenshot Canada.jpg"
                 alt=""
               />
             </div>
-            <div class="hover-tile project-card">
+            <div class="hover-tile project-card lb-hydrocarbon-info-2">
               <img
-                src="assets\img\projects\Hydrocarbon Information Center Screenshot Gas.jpg"
+                src="assets\img\projects\project-thumbnails\Hydrocarbon Information Center Screenshot Gas.jpg"
                 alt=""
               />
             </div>
-            <div class="hover-tile project-card">
-              <img src="assets\img\projects\Renewables Overview.jpg" alt="" />
+            <div class="hover-tile project-card lb-renewables-1">
+              <img src="assets\img\projects\project-thumbnails\Renewables Overview.jpg" alt="" />
             </div>
-            <div class="hover-tile project-card project-card--big">
+            <div
+              class="hover-tile project-card project-card--big lb-hydrocarbon-info-3"
+            >
               <img
-                src="assets\img\projects\Hydrocarbon Information Center Screenshot Liquids.jpg"
+                src="assets\img\projects\project-thumbnails\Hydrocarbon Information Center Screenshot Liquids.jpg"
                 alt=""
               />
             </div>
-            <div class="hover-tile project-card">
+            <div class="hover-tile project-card lb-medieval-armor">
               <img
-                src="assets\img\projects\Medieval Armor Screenshot.jpg"
+                src="assets\img\projects\project-thumbnails\Medieval Armor Screenshot.jpg"
                 alt=""
               />
             </div>
-            <div class="hover-tile project-card">
-              <img src="assets\img\projects\Pipeline Media Kiosks.jpg" alt="" />
+            <div class="hover-tile project-card lb-pipeline-kiosk">
+              <img src="assets\img\projects\project-thumbnails\Pipeline Media Kiosks.jpg" alt="" />
             </div>
-            <div class="hover-tile project-card">
+            <div class="hover-tile project-card lb-prospector">
               <img
-                src="assets\img\projects\Prospector Slot Machine Gameplay Screen.jpg"
+                src="assets\img\projects\project-thumbnails\Prospector Slot Machine Gameplay Screen.jpg"
                 alt=""
               />
             </div>
-            <div class="hover-tile project-card">
-              <img src="assets\img\projects\Renewables Left Side.jpg" alt="" />
+            <div class="hover-tile project-card lb-renewables-2">
+              <img src="assets\img\projects\project-thumbnails\Renewables Left Side.jpg" alt="" />
             </div>
-            <div class="hover-tile project-card">
+            <div class="hover-tile project-card lb-renewables-3">
               <img
-                src="assets\img\projects\Renewables Screenshot Explore Screen.jpg"
+                src="assets\img\projects\project-thumbnails\Renewables Screenshot Explore Screen.jpg"
                 alt=""
               />
             </div>
-            <div class="hover-tile project-card">
+            <div class="hover-tile project-card lb-renewables-4">
               <img
-                src="assets\img\projects\Renewables Screenshot Gallery.jpg"
+                src="assets\img\projects\project-thumbnails\Renewables Screenshot Gallery.jpg"
                 alt=""
               />
             </div>
-            <div class="hover-tile project-card">
+            <div class="hover-tile project-card lb-renewables-hub">
               <img
-                src="assets\img\projects\Renewables Screenshot Hub.jpg"
+                src="assets\img\projects\project-thumbnails\Renewables Screenshot Hub.jpg"
                 alt=""
               />
             </div>
-            <div class="hover-tile project-card">
+            <div class="hover-tile project-card lb-renewables-5">
               <img
-                src="assets\img\projects\Renewables Screenshot Title Screen.jpg"
+                src="assets\img\projects\project-thumbnails\Renewables Screenshot Title Screen.jpg"
                 alt=""
               />
             </div>
-            <div class="hover-tile project-card">
+            <div class="hover-tile project-card lb-renewables-6">
               <img
-                src="assets\img\projects\Renewables Solar Title Screen.jpg"
+                src="assets\img\projects\project-thumbnails\Renewables Solar Title Screen.jpg"
                 alt=""
               />
             </div>
-            <div class="hover-tile project-card">
+            <div class="hover-tile project-card lb-seismic-kiosks">
               <img
-                src="assets\img\projects\Seismic Survey Media Kiosks.jpg"
+                src="assets\img\projects\project-thumbnails\Seismic Survey Media Kiosks.jpg"
                 alt=""
               />
             </div>
-            <div class="hover-tile project-card">
-              <img src="assets\img\projects\Tectonic Plates.jpg" alt="" />
+            <div class="hover-tile project-card lb-tectonics">
+              <img src="assets\img\projects\project-thumbnails\Tectonic Plates.jpg" alt="" />
             </div>
-            <div class="hover-tile project-card">
+            <div class="hover-tile project-card lb-transportation-game">
               <img
-                src="assets\img\projects\Transportation Arcade Development.jpg"
+                src="assets\img\projects\project-thumbnails\Transportation Arcade Development.jpg"
                 alt=""
               />
             </div>
-            <div class="hover-tile project-card">
+            <div
+              class="hover-tile project-card lb-traps-interactive-projection"
+            >
               <img
-                src="assets\img\projects\Traps and Plays Interactive Projection.jpg"
+                src="assets\img\projects\project-thumbnails\Traps and Plays Interactive Projection.jpg"
                 alt=""
               />
             </div>
-            <div class="hover-tile project-card">
+            <div
+              class="hover-tile project-card lb-unconventional-energy-kiosks"
+            >
               <img
-                src="assets\img\projects\Unconventional Energy Overview.jpg"
+                src="assets\img\projects\project-thumbnails\Unconventional Energy Overview.jpg"
                 alt=""
               />
             </div>
-            <div class="hover-tile project-card">
-              <img src="assets\img\projects\Altar.jpg" alt="" />
+            <div class="hover-tile project-card lb-altar">
+              <img src="assets\img\projects\project-thumbnails\Altar.jpg" alt="" />
             </div>
-            <div class="hover-tile project-card">
-              <img src="assets\img\projects\Galaxy Heist.jpg" alt="" />
+            <div class="hover-tile project-card lb-galaxy-heist">
+              <img src="assets\img\projects\project-thumbnails\Galaxy Heist.jpg" alt="" />
             </div>
-            <div class="hover-tile project-card">
-              <img src="assets\img\projects\Game Studio.jpg" alt="" />
+            <div class="hover-tile project-card lb-game-studio">
+              <img src="assets\img\projects\project-thumbnails\Game Studio.jpg" alt="" />
             </div>
-            <div class="hover-tile project-card">
-              <img src="assets\img\projects\Omg.jpg" alt="" />
+            <div class="hover-tile project-card lb-omg">
+              <img src="assets\img\projects\project-thumbnails\Omg.jpg" alt="" />
             </div>
           </div>
         </div>

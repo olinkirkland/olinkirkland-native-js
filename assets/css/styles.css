@@ -63,8 +63,8 @@ hr {
   z-index: 99;
 }
 
-#lightbox:target {
-  display: fixed;
+.lightbox-active {
+  display: block !important;
 }
 
 /* LINKS & BUTTONS */
