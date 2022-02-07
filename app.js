@@ -53,10 +53,12 @@ function onClickProjectCard(event) {
   el.className.split(' ').forEach((cl) => {
     if (cl.indexOf('lb-') == 0) id = cl.substring('lb-'.length);
   });
-  // if (id) openLightbox(id);
+  if (id) openLightbox(id);
 }
 
 function openLightbox(id) {
   const lb = document.getElementById('lightbox');
   lb.classList.add('lightbox-active');
+  const img = lb.getElementById('lightbox-image');
+  img.src = 
 }

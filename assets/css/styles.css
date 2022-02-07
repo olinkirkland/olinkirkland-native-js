@@ -361,7 +361,6 @@ a:active {
 }
 
 .project-card {
-  /* border-radius: 7px; */
   aspect-ratio: 1;
   border: 10px solid white;
   overflow: hidden;
