@@ -57,6 +57,8 @@ function onClickProjectCard(event) {
 }
 
 function onClickExitLightbox() {
+  const img = document.getElementById('lightbox-image');
+  img.src = null;
   const lb = document.getElementById('lightbox');
   lb.classList.remove('lightbox-active');
 }
