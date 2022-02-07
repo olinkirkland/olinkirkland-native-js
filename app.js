@@ -56,10 +56,13 @@ function onClickProjectCard(event) {
   if (id) openLightbox(id);
 }
 
+function onClickExitLightbox() {
+
+}
+
 function openLightbox(id) {
   const lb = document.getElementById('lightbox');
   lb.classList.add('lightbox-active');
-  const img = lb.getElementById('lightbox-image');
-  img.src = id;
-  console.log(id);
+  const img = document.getElementById('lightbox-image');
+  img.src = `assets/img/projects/project-images/${id}.jpg`;
 }
