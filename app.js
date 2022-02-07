@@ -60,5 +60,6 @@ function openLightbox(id) {
   const lb = document.getElementById('lightbox');
   lb.classList.add('lightbox-active');
   const img = lb.getElementById('lightbox-image');
-  img.src = 
+  img.src = id;
+  console.log(id);
 }
