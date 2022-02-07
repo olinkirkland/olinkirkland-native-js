@@ -1,9 +1,9 @@
 const lightboxImages = [
-  { ids: ['woodland-stories'] },
-  { ids: ['realms', 'worlds'] },
-  { ids: ['castle-map'] },
-  { ids: ['crest', 'medieval-armor'] },
-  { ids: ['death-calculator'] },
+  { ids: ['woodland-stories'], images: [] },
+  { ids: ['realms', 'worlds'], images: [] },
+  { ids: ['castle-map'], images: [] },
+  { ids: ['crest', 'medieval-armor'], images: [] },
+  { ids: ['death-calculator'], images: [] },
   {
     ids: [
       'energy-map',
@@ -18,10 +18,12 @@ const lightboxImages = [
       'transportation-game',
       'traps-interactive-projection',
       'unconventional-energy-kiosks'
-    ]
+    ],
+    images: []
   },
   {
-    ids: ['hydrocarbon-info-1', 'hydrocarbon-info-2', 'hydrocarbon-info-3']
+    ids: ['hydrocarbon-info-1', 'hydrocarbon-info-2', 'hydrocarbon-info-3'],
+    images: []
   },
   {
     ids: [
@@ -30,13 +32,15 @@ const lightboxImages = [
       'renewables-3',
       'renewables-4',
       'renewables-5',
-      'renewables-6'
-    ]
+      'renewables-6',
+      'renewables-7'
+    ],
+    images: []
   },
-  { ids: ['altar'] },
-  { ids: ['galaxy-heist'] },
-  { ids: ['game-studio'] },
-  { ids: ['omg'] }
+  { ids: ['altar'], images: [] },
+  { ids: ['galaxy-heist'], images: [] },
+  { ids: ['game-studio'], images: [] },
+  { ids: ['omg'], images: [] }
 ];
 
 function onClickProjectCard(event) {
@@ -54,7 +58,5 @@ function onClickProjectCard(event) {
 
 function openLightbox(id) {
   const lb = document.getElementById('lightbox');
-  // lb.classList.add('lightbox-active');
-
-  navigator.clipboard.writeText(id);
+  lb.classList.add('lightbox-active');
 }
