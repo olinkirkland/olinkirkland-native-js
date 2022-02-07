@@ -61,11 +61,18 @@ function onClickExitLightbox() {
   img.src = null;
   const lb = document.getElementById('lightbox');
   lb.classList.remove('lightbox-active');
+
+  // Unlock the body's scrolling
+  document.body.style.overflowY = 'auto';
 }
 
 function openLightbox(id) {
+  // Show the lightbox
   const lb = document.getElementById('lightbox');
   lb.classList.add('lightbox-active');
   const img = document.getElementById('lightbox-image');
   img.src = `assets/img/projects/project-images/${id}.jpg`;
+  
+  // Lock the body's scrolling
+  document.body.style.overflowY = 'hidden';
 }
