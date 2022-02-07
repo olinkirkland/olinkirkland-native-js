@@ -57,6 +57,7 @@ function onClickProjectCard(event) {
 }
 
 function onClickExitLightbox() {
+  // Hide the lightbox
   const img = document.getElementById('lightbox-image');
   img.src = null;
   const lb = document.getElementById('lightbox');
@@ -72,7 +73,7 @@ function openLightbox(id) {
   lb.classList.add('lightbox-active');
   const img = document.getElementById('lightbox-image');
   img.src = `assets/img/projects/project-images/${id}.jpg`;
-  
+
   // Lock the body's scrolling
   document.body.style.overflowY = 'hidden';
 }
