@@ -53,7 +53,7 @@ function onClickProjectCard(event) {
   el.className.split(' ').forEach((cl) => {
     if (cl.indexOf('lb-') == 0) id = cl.substring('lb-'.length);
   });
-  if (id) openLightbox(id);
+  // if (id) openLightbox(id);
 }
 
 function openLightbox(id) {
