@@ -57,7 +57,8 @@ function onClickProjectCard(event) {
 }
 
 function onClickExitLightbox() {
-
+  const lb = document.getElementById('lightbox');
+  lb.classList.remove('lightbox-active');
 }
 
 function openLightbox(id) {
